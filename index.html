@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BM Form</title>
+	<link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body class="no-js">
+	<div id="wrapper">
+		<header>
+			<h1>BM Form</h1>
+		</header>
+		<form id="ex-form" name="ex-form" method="post" action="so-and-so.php">
+			<label>
+				<span>First Name</span>
+				<input name="ex[first-name]" id="ex-first-name" class="text" type="text">
+			</label>
+			<label>
+				<span>Last Name</span>
+				<input name="ex[last-name]" id="ex-last-name" class="text" type="text">
+			</label>
+			<label>
+				<span>Email</span>
+				<input name="ex[email]" id="ex-email" class="text" type="text">
+			</label>
+			<label>
+				<span>Username</span>
+				<input name="ex[username]" id="ex-username" class="text" type="text">
+			</label>
+			<label>
+				<span>Password</span>
+				<input name="ex[password]" id="ex-password" class="text" type="password">
+			</label>
+			
+			<input name="ex-source" id="ex[submit]" type="hidden" value="html">
+			<input name="ex-submit" id="ex-submit" class="button" type="submit" value="Submit &rarr;">
+		</form>
+	</div>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="bm-form.js"></script>
+	<script type="text/javascript">
+		document.body.onload = function () {
+			document.body.className = "";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+html,body,h1,h2,h3,h4,h5,h6,form,fieldset,input,label,p { margin:0; padding:0; border:0; }
+
+html {
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:16px;
+	line-height:20px;
+	color:#222;
+	background:#00b5ec;
+	padding:50px 0;
+}
+
+#wrapper {
+	width:340px;
+	margin:0 auto;
+	background:#d9d9d9;
+	padding:20px 0;
+	
+	box-shadow:0 10px 20px rgba(0,0,0,.5);
+	
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+
+h1 {
+	font-size:3em;
+	line-height:.8em;
+	padding-bottom:20px;
+	text-shadow:0 1px 0 #fff;
+	text-align:center;
+	border-bottom:1px solid #999;
+	color:#007ba1;
+}
+
+form {
+	border-top:1px solid #fff;
+	padding:20px 30px 0;
+}
+form:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	height:0;
+}
+
+form label {
+	display:block;
+	margin-bottom:10px;
+	height:33px;
+	line-height:1.5em;
+	position:relative;
+}
+.no-js form label:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	height:0;
+}
+
+form label span {
+	text-shadow:0 1px 0 #fff;
+	position:absolute;
+	top:4px;
+	left:7px;
+	z-index:300;
+	color:#404040;
+}
+.no-js form label span {
+	position:static;
+	color:#222;
+	float:left;
+	width:85px;
+	text-align:right;
+	padding-right:10px;
+}
+.no-js form label span:after {
+	content:":";
+}
+
+form input.text {
+	font-size:1em;
+	color:#404040;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:200;
+	width:268px;
+	padding:5px;
+	border:1px solid #bfbfbf;
+	box-shadow:0 1px 0 #fff, inset 0 2px 3px rgba(0,0,0,.15);
+	
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	
+	transition:box-shadow .5s ease-out;
+	-moz-transition:box-shadow .5s ease-out;
+	-webkit-transition:box-shadow .5s ease-out;
+}
+form input.text:focus {
+	box-shadow:0 0 5px #00b5eb, inset 0 2px 3px rgba(0,0,0,.15);
+	border-color:#0090bb;
+}
+.no-js form input.text {
+	width:173px;
+	float:left;
+	position:static;
+}
+
+form input.button {
+	color:#fff;
+	font-size:1em;
+	padding:7px 10px;
+	float:right;
+	border:1px solid #076590;
+	text-shadow:0 -1px 0 #076590;
+	box-shadow:0 1px 0 #fff;
+	cursor:pointer;
+	
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	
+	background: #00ccf2; /* Old browsers */
+	background: -moz-linear-gradient(top, #00ccf2 0%, #008fde 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ccf2), color-stop(100%,#008fde)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #00ccf2 0%,#008fde 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #00ccf2 0%,#008fde 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #00ccf2 0%,#008fde 100%); /* IE10+ */
+	background: linear-gradient(top, #00ccf2 0%,#008fde 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ccf2', endColorstr='#008fde',GradientType=0 ); /* IE6-9 */
+}
+form input.button:focus,
+form input.button:hover {
+	box-shadow:0 0 5px #00b5eb, inset 0 2px 3px rgba(0,0,0,.15);
+	border-color:#0090bb;
+}
